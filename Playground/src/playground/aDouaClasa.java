@@ -17,7 +17,7 @@ public class aDouaClasa {
 				System.out.println ("class:2 // method:1");
 			}
 	
-	@Test 
+	@Test(timeOut=4000)
 		public void class2method2() 
 			{
 				System.out.println("class2: // method:2");	

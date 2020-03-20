@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Clasa a doua(failed)">
-    <parameter name="RLU" value="Shelvetica.org"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="playground.aDouaClasa">
+      <class name="playground.primaClasa">
         <methods>
-          <include name="methodBefore"/>
-          <include name="class2method4"/>
+          <include name="MethodBefore"/>
+          <include name="BFsuite"/>
           <include name="methodAfter"/>
-          <include name="class2method2"/>
+          <include name="After"/>
+          <include name="class1method2"/>
+          <include name="AFsuite"/>
+          <include name="Before"/>
         </methods>
-      </class> <!-- playground.aDouaClasa -->
+      </class> <!-- playground.primaClasa -->
     </classes>
-  </test> <!-- Clasa a doua(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

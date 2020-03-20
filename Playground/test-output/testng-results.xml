@@ -1,129 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="15" passed="10">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="212" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+  <suite name="Default suite" duration-ms="113" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
     <groups>
       <group name="smoke">
         <method signature="primaClasa.class1method1()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method1" class="playground.primaClasa"/>
-        <method signature="aPatraClasa.class4method1()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="class4method1" class="playground.aPatraClasa"/>
-        <method signature="aTreiaClasa.class3method2()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="class3method2" class="playground.aTreiaClasa"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Prima Clasa " duration-ms="59" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+    <test name="Default test" duration-ms="113" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
       <class name="playground.primaClasa">
-        <test-method status="PASS" signature="MethodBefore()[pri:0, instance:playground.primaClasa@3632be31]" name="MethodBefore" is-config="true" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="PASS" signature="BFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="BFsuite" is-config="true" duration-ms="23" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BFsuite -->
+        <test-method status="PASS" signature="MethodBefore()[pri:0, instance:playground.primaClasa@3632be31]" name="MethodBefore" is-config="true" duration-ms="2" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MethodBefore -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method1()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method1" duration-ms="11" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="PASS" signature="class1method1()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method1" duration-ms="12" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- class1method1 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.primaClasa@3632be31]" name="methodAfter" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="FAIL" signature="class1method2(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method2" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'test' is required by @Test on method class1method2 but has not been marked @Optional or defined
+in C:\Users\Florin\AppData\Local\Temp\testng-eclipse-349595345\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'test' is required by @Test on method class1method2 but has not been marked @Optional or defined
+in C:\Users\Florin\AppData\Local\Temp\testng-eclipse-349595345\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methodAfter -->
-      </class> <!-- playground.primaClasa -->
-    </test> <!-- Prima Clasa  -->
-    <test name="Clasa a doua" duration-ms="20" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-      <class name="playground.aDouaClasa">
-        <test-method status="PASS" signature="class2method4(java.lang.String)[pri:0, instance:playground.aDouaClasa@5bc79255]" name="class2method4" duration-ms="3" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        </test-method> <!-- class1method2 -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="4" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Shelvetica.org]]>
+                <![CDATA[firstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- class2method4 -->
-        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.aDouaClasa@5bc79255]" name="methodAfter" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        </test-method> <!-- class1method3 -->
+        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="1" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2ndUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- class1method3 -->
+        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="1" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3rdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- class1method3 -->
+        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="PASS" signature="class1method4()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method4" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- class1method4 -->
+        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.primaClasa@3632be31]" name="methodAfter" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodAfter -->
-      </class> <!-- playground.aDouaClasa -->
-    </test> <!-- Clasa a doua -->
-    <test name="rest of the classes" duration-ms="44" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-      <class name="playground.aTreiaClasa">
-        <test-method status="PASS" signature="methodBefore()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="methodBefore" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodBefore -->
-        <test-method status="PASS" signature="class3method1()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="class3method1" duration-ms="2" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class3method1 -->
-        <test-method status="PASS" signature="class3method2()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="class3method2" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class3method2 -->
-        <test-method status="PASS" signature="class3method3()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="class3method3" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class3method3 -->
-        <test-method status="PASS" signature="class3method4()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="class3method4" duration-ms="2" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class3method4 -->
-        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.aTreiaClasa@578486a3]" name="methodAfter" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodAfter -->
-      </class> <!-- playground.aTreiaClasa -->
-      <class name="playground.aPatraClasa">
-        <test-method status="PASS" signature="methodBefore()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="methodBefore" is-config="true" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodBefore -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="beforeClass" is-config="true" duration-ms="2" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="class4method1()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="class4method1" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class4method1 -->
-        <test-method status="PASS" signature="class4method2()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="class4method2" duration-ms="2" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class4method2 -->
-        <test-method status="PASS" signature="class4method3()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="class4method3" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class4method3 -->
-        <test-method status="PASS" signature="class4method4()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="class4method4" duration-ms="3" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class4method4 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.aPatraClasa@551aa95a]" name="methodAfter" is-config="true" duration-ms="1" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodAfter -->
-      </class> <!-- playground.aPatraClasa -->
-      <class name="playground.primaClasa">
-        <test-method status="PASS" signature="BFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="BFsuite" is-config="true" duration-ms="13" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BFsuite -->
-        <test-method status="PASS" signature="AFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="AFsuite" is-config="true" duration-ms="0" started-at="2020-03-20T14:45:18 EET" finished-at="2020-03-20T14:45:18 EET">
+        <test-method status="PASS" signature="AFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="AFsuite" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:40 EET" finished-at="2020-03-20T16:00:40 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AFsuite -->
       </class> <!-- playground.primaClasa -->
-    </test> <!-- rest of the classes -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

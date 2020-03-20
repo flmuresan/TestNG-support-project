@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class aDouaClasa {
+public class SecondClass {
 	
 	@BeforeTest(enabled=false)
 		public void methodBefore()

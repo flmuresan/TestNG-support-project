@@ -3,7 +3,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class aTreiaClasa {
+public class ThirdClass {
 	
 	@BeforeTest
 	public void methodBefore()

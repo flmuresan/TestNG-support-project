@@ -7,7 +7,6 @@
       <class name="playground.aDouaClasa">
         <methods>
           <include name="methodBefore"/>
-          <include name="class2method4"/>
           <include name="methodAfter"/>
           <include name="class2method2"/>
         </methods>

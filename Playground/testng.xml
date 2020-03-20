@@ -3,10 +3,15 @@
 <suite name="Suite">
 
   <test name="Prima Clasa ">
+  <parameter name="test" value="Ohmygod"/>
+  <parameter name="test2" value="godOhMy"/>
    	<classes>
    		<class name="playground.primaClasa">
    			<methods> 
    				<include name ="class1method1"></include>
+   				<include name ="class1method2"></include>
+   				<include name ="class1method3"></include>
+   				<include name ="class1method4"></include>
    			</methods>
    		</class>
   	 </classes>

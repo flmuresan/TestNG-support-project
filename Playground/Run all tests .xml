@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+   
+    <test name="All the classes">
+    <classes>
+      <class name="playground.aTreiaClasa"/>
+      <class name="playground.aDouaClasa"/>
+      <class name="playground.aPatraClasa"/>
+      <class name="playground.primaClasa"/>
+    </classes>
+  </test> 
+   
+   
+</suite> 

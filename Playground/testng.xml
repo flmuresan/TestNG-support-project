@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test name="Prima Clasa ">
+   	<classes>
+   		<class name="playground.primaClasa">
+   			<methods> 
+   				<include name ="class1method1"></include>
+   			</methods>
+   		</class>
+  	 </classes>
+   </test>
+   
+   <test name="Clasa a doua">
+   	<classes>
+   		<class name="playground.aDouaClasa">
+   			<methods>
+   				<exclude name="class2method1"></exclude>
+   				<exclude name="class2method3"></exclude>
+   			</methods>
+   		</class>
+   	</classes>
+   </test>
+   
+    <test name="rest of the classes">
+    <classes>
+      <class name="playground.aTreiaClasa"/>
+      <class name="playground.aPatraClasa"/>
+    </classes>
+  </test> 
+   
+   
+</suite> 

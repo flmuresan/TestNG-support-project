@@ -13,6 +13,7 @@
    </test>
    
    <test name="Clasa a doua">
+   <parameter name="RLU" value="Shelvetica.org"/>
    	<classes>
    		<class name="playground.aDouaClasa">
    			<methods>

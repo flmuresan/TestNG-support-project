@@ -1,4 +1,5 @@
 package playground;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -37,6 +38,7 @@ public class FirstClass {
 	public void class1method1()
 		{
 			System.out.println ("class:1 // method:1");
+			Assert.assertTrue(false);
 		}
 	
 	@Parameters({"test", "test2"}) 

@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="12" total="16" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+  <suite name="Suite" duration-ms="128" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
     <groups>
       <group name="smoke">
-        <method signature="primaClasa.class1method1()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method1" class="playground.primaClasa"/>
+        <method signature="FirstClass.class1method1()[pri:0, instance:playground.FirstClass@3e9b1010]" name="class1method1" class="playground.FirstClass"/>
+        <method signature="FourthClass.class4method1()[pri:0, instance:playground.FourthClass@18eed359]" name="class4method1" class="playground.FourthClass"/>
+        <method signature="SecondClass.class2method1()[pri:0, instance:playground.SecondClass@520a3426]" name="class2method1" class="playground.SecondClass"/>
+        <method signature="ThirdClass.class3method2()[pri:0, instance:playground.ThirdClass@6536e911]" name="class3method2" class="playground.ThirdClass"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="113" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-      <class name="playground.primaClasa">
-        <test-method status="PASS" signature="BFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="BFsuite" is-config="true" duration-ms="23" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BFsuite -->
-        <test-method status="PASS" signature="MethodBefore()[pri:0, instance:playground.primaClasa@3632be31]" name="MethodBefore" is-config="true" duration-ms="2" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MethodBefore -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method1()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method1" duration-ms="12" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class1method1 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="FAIL" signature="class1method2(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method2" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <exception class="org.testng.TestNGException">
+    <test name="All the classes" duration-ms="128" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
+      <class name="playground.FirstClass">
+        <test-method status="FAIL" signature="class1method1()[pri:0, instance:playground.FirstClass@3e9b1010]" name="class1method1" duration-ms="10" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Parameter 'test' is required by @Test on method class1method2 but has not been marked @Optional or defined
-in C:\Users\Florin\AppData\Local\Temp\testng-eclipse-349595345\testng-customsuite.xml]]>
+              <![CDATA[did not expect to find [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'test' is required by @Test on method class1method2 but has not been marked @Optional or defined
-in C:\Users\Florin\AppData\Local\Temp\testng-eclipse-349595345\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:289)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
-at org.testng.internal.Parameters.createParameters(Parameters.java:721)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at playground.FirstClass.class1method1(FirstClass.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -70,103 +55,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- class1method2 -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+        </test-method> <!-- class1method1 -->
+      </class> <!-- playground.FirstClass -->
+      <class name="playground.SecondClass">
+        <test-method status="PASS" signature="class2method1()[pri:0, instance:playground.SecondClass@520a3426]" name="class2method1" duration-ms="2" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="4" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firstUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- class2method1 -->
+      </class> <!-- playground.SecondClass -->
+      <class name="playground.FourthClass">
+        <test-method status="PASS" signature="class4method1()[pri:0, instance:playground.FourthClass@18eed359]" name="class4method1" duration-ms="1" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- class1method3 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
+        </test-method> <!-- class4method1 -->
+      </class> <!-- playground.FourthClass -->
+      <class name="playground.ThirdClass">
+        <test-method status="PASS" signature="class3method2()[pri:0, instance:playground.ThirdClass@6536e911]" name="class3method2" duration-ms="19" started-at="2020-03-23T13:10:01 EET" finished-at="2020-03-23T13:10:01 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="1" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2ndUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class1method3 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method3(java.lang.String, java.lang.String)[pri:0, instance:playground.primaClasa@3632be31]" name="class1method3" duration-ms="1" started-at="2020-03-20T16:00:39 EET" data-provider="getData" finished-at="2020-03-20T16:00:39 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3rdUsername]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class1method3 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:playground.primaClasa@3632be31]" name="Before" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="class1method4()[pri:0, instance:playground.primaClasa@3632be31]" name="class1method4" duration-ms="1" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- class1method4 -->
-        <test-method status="PASS" signature="After()[pri:0, instance:playground.primaClasa@3632be31]" name="After" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-        <test-method status="PASS" signature="methodAfter()[pri:0, instance:playground.primaClasa@3632be31]" name="methodAfter" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:39 EET" finished-at="2020-03-20T16:00:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodAfter -->
-        <test-method status="PASS" signature="AFsuite()[pri:0, instance:playground.primaClasa@3632be31]" name="AFsuite" is-config="true" duration-ms="0" started-at="2020-03-20T16:00:40 EET" finished-at="2020-03-20T16:00:40 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AFsuite -->
-      </class> <!-- playground.primaClasa -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- class3method2 -->
+      </class> <!-- playground.ThirdClass -->
+    </test> <!-- All the classes -->
+  </suite> <!-- Suite -->
 </testng-results>
